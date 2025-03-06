@@ -1,6 +1,7 @@
 using Cofy.IncomeTaxCalculator.API.Extensions;
 using Cofy.IncomeTaxCalculator.API.MiddleWares;
 using Cofy.IncomeTaxCalculator.Application;
+using Cofy.IncomeTaxCalculator.Data.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +15,7 @@ builder.Services.AddBasicAuthentication();
 builder.Services.AddSwaggerOpenApi(builder.Configuration);
 
 builder.Services.AddApplicationServices();
+builder.Services.AddTaxCalculatorDbContext(builder.Configuration);
 
 var app = builder.Build();
 
