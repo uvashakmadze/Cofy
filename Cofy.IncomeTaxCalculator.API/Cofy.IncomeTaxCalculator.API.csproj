@@ -14,6 +14,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Cofy.IncomeTaxCalculator.Application\Cofy.IncomeTaxCalculator.Application.csproj" />
     <ProjectReference Include="..\Cofy.IncomeTaxCalculator.Contracts\Cofy.IncomeTaxCalculator.Contracts.csproj" />
+    <ProjectReference Include="..\Cofy.IncomeTaxCalculator.Data\Cofy.IncomeTaxCalculator.Data.csproj" />
   </ItemGroup>
 
 </Project>
